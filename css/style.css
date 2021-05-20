@@ -1,0 +1,315 @@
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+ 
+:root{
+--color-uno:#F2BB9B;
+--color-dos:#F27166;
+--color-tres:#494259;
+--color-cuatro:#F2D6A2;
+--tipo-titulos: tajo
+
+}
+
+/* INICIO */
+
+.nav li{
+  display: inline;
+  font-size: 2em;
+  color:var(--color-cuatro)
+
+}
+
+.nav ul{
+  justify-content: space-between;
+  
+
+}
+
+.contenedor_cabeza{
+  background: var(--color-dos);
+  padding: 20px;
+}
+
+ body{
+    font-family: helvetica, arial;
+    font-size: 16px;
+    background-color:var(--color-uno);
+    padding: 3em;
+    letter-spacing: 0.03cm;
+    line-height: 1.6;
+    align-items: center;
+ }
+
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: var(--color-tres);
+  text-align: center;
+  font-size: 4em;
+  padding: 1.5em;
+}
+
+span {color: #ccc;}
+
+.todo{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.todo .cards {
+  flex-basis: 0;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+    margin: 1em;
+    border: 6px solid;
+    color: var(--color-dos);
+    background: var(--color-dos);
+    padding:3%;
+    overflow: hidden;
+    text-align: center;
+    border-radius:  53px 53px 53px 53px;
+    -moz-border-radius: 53px 53px 53px 53px;
+    -webkit-border-radius: 53px 53px 53px 53px;
+   
+}
+
+img {
+    width: 100%;
+    height: auto;
+    
+  }
+
+  h2{
+      color:var(--color-tres);
+      background: var(--color-uno);
+      border-bottom: 5px solid var(--color-tres);
+      text-align: center;
+      padding: 0.3em;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5em;
+      
+  }
+
+  p{
+      font-size: 1em;
+      color: black;
+      line-height : 25px;
+      margin: 0.5em;
+      margin-bottom: 1em;
+      text-align: justify;
+     
+  }
+
+  .hipervinculo{
+    text-align: right;
+    margin-top: auto;
+  }
+
+  a{
+    border: 4px;
+    color:var(--color-tres);
+    padding: 0.5em;
+    text-decoration: none;
+    margin-top: auto;
+  }
+
+  a:hover{
+      background: skyblue;
+      color:slateblue;
+      padding:0.5em;
+
+      
+  }
+
+  .info_final{
+    background: var(--color-dos);
+    margin: 1.1em;
+    padding: 1em;
+
+  }
+
+  h3{
+    color:#494259;
+    text-align: center;
+}
+
+/* LOGO */
+
+.logo{
+  width: 5em;
+}
+
+/* HOJA DE GALERIA */
+
+.texto_galeria{
+  margin: 1em;
+    border: 6px solid;
+    color: var(--color-dos);
+    background: var(--color-dos);
+    padding:1cm;
+    overflow: hidden;
+    text-align: center;
+    border-radius:  53px 53px 53px 53px;
+    -moz-border-radius: 53px 53px 53px 53px;
+    -webkit-border-radius: 53px 53px 53px 53px;
+}
+
+.galeria{
+
+  margin: 8em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.item {
+  flex: 32%;
+  height: 100px;
+  margin-bottom: 2%;
+
+}
+
+
+
+/* HOJA DE VIDEO */
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+  margin: 1ems;
+
+  
+}
+
+.card-container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 2em;
+  background:var(--color-dos);
+  border-radius: 2px;
+  padding: 2em;
+  border-radius:  2px;
+  border-radius:  53px 53px 53px 53px;
+  -moz-border-radius: 53px 53px 53px 53px;
+  -webkit-border-radius: 53px 53px 53px 53px;
+
+ 
+}
+
+.header{
+  border-right: 1px;
+ 
+  
+}
+
+.descripcion{
+  background: var(--color-dos);
+}
+
+
+.header.descripcion{
+  padding: 3em;
+  text-align: center;
+}
+
+/* CONTACTO*/
+ form{
+   width: 450px;
+   margin: auto;
+   padding: 30px;
+   background: var(--color-dos);
+   border-radius:  53px 53px 53px 53px;
+  -moz-border-radius: 53px 53px 53px 53px;
+  -webkit-border-radius: 53px 53px 53px 53px;
+
+ }
+ input, textarea{
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 7px;
+   box-sizing: border-box;
+   font-size: 17px;
+ }
+
+ textarea{
+   min-height: 100px;
+   max-height: 200px;
+   max-width: 100%;
+ }
+
+ #boton{
+   background: var(--color-uno);
+   padding: 20px;
+ }
+
+ #boton:hover{
+   cursor: pointer;
+
+ }
+ @media(max-width:480px){
+   form{
+     width: 100%;
+   }
+ }
+
+
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+
+
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+  /*Aquí van los estilos*/  
+
+}
+
+
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+.card-container{
+  display: block;
+}
+
+..galeria{
+  margin: auto;
+}
+
+
+}
+
+
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .card-container{
+    display: block;
+  }
+
+  ..galeria{
+    margin: auto;
+  }
+
+}
